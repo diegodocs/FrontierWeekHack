@@ -71,11 +71,17 @@ az group create \
 # --- AI Foundry Hub ----------------------------------------------------------
 echo ">>> Creating Microsoft Foundry Account resource (AIServices)..."
 SUBSCRIPTION_ID=$(az account show --query id -o tsv)
-az rest \
-    --method PUT \
-    --url "https://management.azure.com/subscriptions/$SUBSCRIPTION_ID/resourceGroups/$RESOURCE_GROUP/providers/Microsoft.CognitiveServices/accounts/$FOUNDRY_RESOURCE_NAME?api-version=2026-03-01" \
-    --body "{\"kind\": \"AIServices\", \"sku\": {\"name\": \"S0\"}, \"location\": \"$LOCATION\", \"identity\": {\"type\": \"SystemAssigned\"}, \"properties\": {\"customSubDomainName\": \"$FOUNDRY_RESOURCE_NAME\", \"publicNetworkAccess\": \"Enabled\", \"allowProjectManagement\": true}}" \
-    --output none || true
+
+az cognitiveservices account create \
+    --name "$FOUNDRY_RESOURCE_NAME" \
+    --resource-group "$RESOURCE_GROUP" \
+    --location "$LOCATION" \
+    --kind AIServices \
+    --sku S0 \
+    --custom-domain "$FOUNDRY_RESOURCE_NAME" \
+    --allow-project-management true \
+    --yes \
+    --output none
 
 echo ">>> Waiting for AIServices resource to reach Succeeded state..."
 for i in $(seq 1 36); do
