@@ -29,7 +29,7 @@ Todos os cenários seguem os mesmos cinco desafios:
 | 1 | **Criar agentes** — Criar dois agentes de IA com ferramentas | 30 min |
 | 2 | **Monitorar** — Habilitar o rastreamento de GenAI com o Application Insights | 20 min |
 | 3 | **Avaliar** — Executar avaliações sistemáticas de qualidade | 30 min |
-| 4 | **Fluxo de trabalho** — Orquestração multiagente pelo portal do Foundry | 20 min |
+| 4 | **Workflow** — Orquestração multiagente pelo portal do Foundry | 20 min |
 
 ## Pré-requisitos
 

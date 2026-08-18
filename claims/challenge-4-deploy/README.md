@@ -20,7 +20,7 @@ claims processing workflow, run it from code, then build and test it visually in
 - Invoke the portal workflow from Python with live streaming
 - View run history and traces in the portal
 
-## O fluxo de trabalho
+## O Workflow
 
 ```
 ensure_agents_deployed()

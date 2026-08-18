@@ -1,15 +1,13 @@
 <img width="990" height="150" alt="Microsoft Agent-a-thon_banner_WEB_990x150" src="https://github.com/user-attachments/assets/5f550061-077d-421c-bba2-4a5820e72fad" />
 
 # Frontier Week Hack
-## Crie e dimensione agentes de IA com o Microsoft Foundry
+## Microsoft Foundry: Crie, escale, observa e proteja seus agentes de IA 
  
 Boas-vindas à experiência de laboratório prático onde ideias se transformam em soluções reais e prontas para empresas. Esta é a mais avançada das três trilhas de criação de agentes. Enquanto a trilha Explorer cria seu primeiro agente sem código e a trilha Maker automatiza tarefas com ferramentas low-code, esta trilha é voltada a desenvolvedores, engenheiros e arquitetos que desejam controle total sobre modelos, orquestração e operações.
 
 Neste laboratório, você criará, monitorará, avaliará e orquestrará agentes de IA usando o SDK do Microsoft Foundry. Você seguirá uma experiência guiada e baseada em cenários, projetada para ajudar a transformar um conceito em um sistema multiagente funcional e pronto para empresas.
  
 Ao final, você não apenas entenderá como os agentes funcionam: terá criado um agente que pode rastrear, avaliar e implantar.
-
-Todas as instruções dos desafios também estão disponíveis em [microsoft.github.io/FrontierWeekHack](https://microsoft.github.io/FrontierWeekHack/).
 
 ## O que você aprenderá
 
@@ -41,7 +39,7 @@ Todos os cenários seguem a mesma estrutura de cinco desafios:
 | 1 | **Criar agentes** | 35 min | Criar dois agentes com ferramentas e prompts de sistema |
 | 2 | **Monitorar** | 20 min | Habilitar o rastreamento de GenAI com o Application Insights |
 | 3 | **Avaliar** | 25 min | Executar avaliações com LLM como juiz em conjuntos de dados de teste |
-| 4 | **Fluxo de trabalho** | 20 min | Orquestrar agentes em um pipeline de várias etapas |
+| 4 | **Workflow** | 20 min | Orquestrar agentes em um pipeline de várias etapas |
 
 ## Pré-requisitos
 
@@ -52,16 +50,7 @@ Todos os cenários seguem a mesma estrutura de cinco desafios:
 
 ## Pronto para ampliar seus conhecimentos?
 
-### 1. Teste suas habilidades no Microsoft Agent-a-Thon!
-Você criou agentes prontos para produção; agora leve-os para uma experiência prática de criação ao vivo. O Microsoft Agent-a-Thon é onde você aplica tudo desta trilha, recebe suporte em tempo real durante a criação e concorre a reconhecimento e prêmios. Inscreva-se em [Microsoft Agent-a-Thon](https://www.microsoft.com/en-us/events/local-events/microsoft-agent-a-thon).
-
-### 2. Junte-se à turnê!
-
-<img width="4400" height="687" alt="banner" src="agentichacks.jpg" />
-
-Prefere criar ao lado de especialistas? Passe um dia inteiro explorando casos de uso avançados, criações práticas e sessões conduzidas por especialistas, projetadas para transformar ideias em impacto real nos negócios. Encontre o evento mais próximo de você em [EMEA Agentic AI Hacks - Microsoft Pulse](https://pulse.microsoft.com/en/build-ai-hacks-agentic-ai/).
-
-### 3. Aprofunde-se com a documentação
+### 1. Aprofunde-se com a documentação
 
 - [O que é o Microsoft Foundry?](https://learn.microsoft.com/azure/foundry/what-is-foundry)
 - [Visão geral do Foundry Agent Service](https://learn.microsoft.com/azure/foundry/agents/overview)
@@ -69,7 +58,7 @@ Prefere criar ao lado de especialistas? Passe um dia inteiro explorando casos de
 - [Avalie fluxos de trabalho agentivos](https://learn.microsoft.com/azure/foundry/observability/how-to/evaluate-agent)
 - [Referência do SDK azure-ai-projects](https://learn.microsoft.com/python/api/azure-ai-projects/)
 
-### 4. Continue aprendendo no Microsoft Learn
+### 2. Continue aprendendo no Microsoft Learn
 
 - [Desenvolva um agente de IA com o Foundry Agent Service](https://learn.microsoft.com/training/modules/develop-ai-agent-azure/) — módulo de 55 min
 - [Crie fluxos de trabalho orientados por agentes usando o Microsoft Foundry](https://learn.microsoft.com/training/modules/build-agent-workflows-microsoft-foundry/) — módulo de 1 hora

@@ -35,7 +35,7 @@ Você criará dois agentes:
 
 ## Estrutura
 
-Todos os desafios usam o SDK do Python. O Desafio 4 também orienta você pelo portal do Foundry para criar e testar visualmente o fluxo de trabalho multiagente.
+Todos os desafios usam o SDK do Python. O Desafio 4 também orienta você pelo portal do Foundry para criar e testar visualmente o Workflow multiagente.
 
 ## Desafios
 
@@ -45,7 +45,7 @@ Todos os desafios usam o SDK do Python. O Desafio 4 também orienta você pelo p
 | 1 | [Criar agentes](./challenge-1-build/README.md) | 30 min | Criar agentes de triagem e decisão de sinistros |
 | 2 | [Monitorar](./challenge-2-monitor/README.md) | 20 min | Habilitar rastreamento, explorar o Application Insights |
 | 3 | [Avaliar](./challenge-3-evaluate/README.md) | 30 min | Executar avaliações, interpretar métricas de qualidade |
-| 4 | [Fluxo de trabalho](./challenge-4-deploy/README.md) | 20 min | Criar um fluxo multiagente: triagem → decisão → relatório de sinistros |
+| 4 | [Workflow](./challenge-4-deploy/README.md) | 20 min | Criar um fluxo multiagente: triagem → decisão → relatório de sinistros |
 
 ## Por que os desafios estão nesta ordem
 
