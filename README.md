@@ -1,7 +1,7 @@
 <img width="990" height="150" alt="Microsoft Agent-a-thon_banner_WEB_990x150" src="https://github.com/user-attachments/assets/5f550061-077d-421c-bba2-4a5820e72fad" />
 
-# Crie e dimensione agentes de IA com o Microsoft Foundry
-## Trilha de aprendizagem Nível 3: Arquiteto
+# Frontier Week Hack
+## Crie e dimensione agentes de IA com o Microsoft Foundry
  
 Boas-vindas à experiência de laboratório prático onde ideias se transformam em soluções reais e prontas para empresas. Esta é a mais avançada das três trilhas de criação de agentes. Enquanto a trilha Explorer cria seu primeiro agente sem código e a trilha Maker automatiza tarefas com ferramentas low-code, esta trilha é voltada a desenvolvedores, engenheiros e arquitetos que desejam controle total sobre modelos, orquestração e operações.
 
