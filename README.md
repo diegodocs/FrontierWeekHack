@@ -47,6 +47,19 @@ Todos os cenários seguem a mesma estrutura de cinco desafios:
 - Uma **conta do GitHub**
 - **Python 3.10 ou posterior** instalado localmente (pré-instalado ao usar Codespaces)
 - **Azure CLI** (`az`) instalada (pré-instalada ao usar Codespaces)
+- **Azure Developer CLI** (`azd`) instalada (pré-instalada ao usar Codespaces)
+
+## Implantar pelo diretório raiz
+
+O projeto `azd` na raiz provisiona o cenário da central de atendimento. Depois de autenticar no Azure, execute:
+
+```bash
+az login
+azd auth login
+azd up
+```
+
+O comando cria os recursos no grupo de recursos do ambiente `azd` e gera o arquivo `.env` na raiz do repositório. Para alterar o ambiente ou a assinatura, use `azd env set` antes de executar `azd up`.
 
 ## Pronto para ampliar seus conhecimentos?
 

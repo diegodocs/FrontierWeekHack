@@ -68,13 +68,15 @@ az login
 
 ## Implantar infraestrutura
 
-Na pasta **callcenter**, execute o script de implantação:
+Na pasta **callcenter**, inicialize o ambiente `azd` e provisione a infraestrutura:
 
 ```bash
-bash challenge-0-setup/deploy.sh
+cd callcenter
+azd auth login
+azd provision
 ```
 
-Isso provisionará todos os recursos **e** gravará automaticamente seu arquivo `.env` na raiz do repositório como `.env`. A implantação levará alguns minutos para ser concluída.
+Isso provisionará todos os recursos e gravará automaticamente seu arquivo `.env` na pasta **callcenter**. A implantação levará alguns minutos para ser concluída. Para alterar a região ou os nomes, use `azd env set` antes de executar `azd provision`.
 
 ## Verificar a criação dos recursos
 

@@ -31,7 +31,7 @@ Você criará dois agentes:
 - **Python 3.10+** instalado localmente
 - **Azure CLI** (`az`) installed and logged in (`az login`)
 - Um terminal (bash, PowerShell ou WSL)
-- Cerca de 20 minutos para provisionar a infraestrutura (execute `challenge-0-setup/deploy.sh` primeiro na raiz do repositório!)
+- Cerca de 20 minutos para provisionar a infraestrutura (execute `azd provision` primeiro na pasta `claims`!)
 
 ## Estrutura
 

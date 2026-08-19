@@ -8,7 +8,7 @@ Parabéns — você criou, instrumentou, avaliou e implantou do zero um sistema 
 
 | # | Desafio | O que você criou |
 |---|-----------|----------------|
-| 0 | **Configuração** | Provisionou um recurso e projeto do Microsoft Foundry, uma implantação de modelo GPT, um workspace do Log Analytics e uma instância do Application Insights por meio de um único script `deploy.sh` |
+| 0 | **Configuração** | Provisionou um recurso e projeto do Microsoft Foundry, uma implantação de modelo GPT, um workspace do Log Analytics e uma instância do Application Insights usando `azd provision` |
 | 1 | **Criar Agentes** | Criou um **Agente de Detecção de Anomalias** (lê telemetria de sensores ao vivo — temperatura, vibração e pressão — e identifica máquinas operando fora dos limites seguros) e um **Agente de Diagnóstico de Falhas** (determina a causa raiz e recomenda ações de manutenção por tipo de máquina) |
 | 2 | **Monitorar** | Habilitou o rastreamento GenAI do OpenTelemetry — cada chamada de modelo, invocação de ferramenta e contagem de tokens é capturada como um rastreamento distribuído no Application Insights |
 | 3 | **Avaliar** | Executou avaliações sistemáticas com LLM como juiz em todo o conjunto de dados de sensores, produzindo pontuações repetíveis de coerência e fluência que podem ser acompanhadas por versão entre mudanças de prompt |
@@ -49,15 +49,16 @@ Quer levar o sistema da TireForge adiante? Veja alguns caminhos:
   - Workspace do Log Analytics
   - Instância do Application Insights
 
-### Opção 1 — Script
+### Opção 1 — azd down
 
-Execute o script de limpeza a partir da raiz do repositório:
+Na pasta **factory** (onde o ambiente `azd` foi inicializado), execute:
 
 ```bash
-bash factory/cleanup.sh
+cd factory
+azd down --purge
 ```
 
-O script lê o arquivo `.env` escrito por `deploy.sh` para saber exatamente qual grupo de recursos deve atingir. Ele pede confirmação antes de excluir.
+O comando usa o ambiente `azd` criado por `azd provision` para saber exatamente qual grupo de recursos deve atingir. Ele pede confirmação antes de excluir.
 
 ### Opção 2 — Portal do Azure
 

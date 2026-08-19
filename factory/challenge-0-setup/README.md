@@ -68,13 +68,15 @@ az login
 
 ## Implantar a Infraestrutura
 
-Na pasta **factory**, execute o script de implantação:
+Na pasta **factory**, inicialize o ambiente `azd` e provisione a infraestrutura:
 
 ```bash
-bash challenge-0-setup/deploy.sh
+cd factory
+azd auth login
+azd provision
 ```
 
-Isso provisionará todos os recursos **e** gravará automaticamente seu arquivo `.env` na raiz do repositório como `.env`. A implantação levará alguns minutos para ser concluída.
+Isso provisionará todos os recursos **e** gravará automaticamente seu arquivo `.env` na pasta **factory**. A implantação levará alguns minutos para ser concluída.
 
 ## Verificar a criação dos seus recursos
 

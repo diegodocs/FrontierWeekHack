@@ -8,7 +8,7 @@ Parabéns — você criou, instrumentou, avaliou e implantou do zero um sistema 
 
 | # | Desafio | O que você criou |
 |---|-----------|----------------|
-| 0 | **Configuração** | Provisionou um recurso do Microsoft Foundry, projeto, implantação de modelo GPT, workspace do Log Analytics e instância do Application Insights usando um único script `deploy.sh` |
+| 0 | **Configuração** | Provisionou um recurso do Microsoft Foundry, projeto, implantação de modelo GPT, workspace do Log Analytics e instância do Application Insights usando `azd provision` |
 | 1 | **Criar agentes** | Criou um **Agente de Classificação de Intenção** (classifica intenções de cobrança, tecnologia, cancelamento, upsell e segurança com uma ferramenta `lookup_customer`) e um **Agente Consultor de Resolução** (recomenda ofertas de retenção e ações por nível de cliente) |
 | 2 | **Monitorar** | Habilitou o tracing de GenAI do OpenTelemetry — cada chamada de modelo, invocação de ferramenta e contagem de tokens é capturada como um trace distribuído no Application Insights |
 | 3 | **Avaliar** | Executou avaliações sistemáticas LLM-as-judge em todo o conjunto de chamadas, produzindo pontuações repetíveis de coerência e fluência que podem ser acompanhadas entre versões dos prompts |
@@ -49,15 +49,15 @@ Quer levar o sistema da NovaTel além? Veja algumas direções:
   - Log Analytics workspace
   - Application Insights instance
 
-### Opção 1 — Script
+### Opção 1 — azd down
 
-Execute o script de limpeza na raiz do repositório:
+Na raiz do repositório (onde o ambiente `azd` foi inicializado), execute:
 
 ```bash
-bash callcenter/cleanup.sh
+azd down --purge
 ```
 
-O script lê o arquivo `.env` escrito por `deploy.sh` para saber exatamente qual grupo de recursos deve ser excluído. Ele pede confirmação antes da exclusão.
+O comando usa o ambiente `azd` criado por `azd provision` para saber exatamente qual grupo de recursos deve ser excluído. Ele pede confirmação antes da exclusão.
 
 ### Opção 2 — Portal do Azure
 

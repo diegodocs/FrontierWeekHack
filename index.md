@@ -36,11 +36,13 @@ Todos os cenários seguem os mesmos cinco desafios:
 - Assinatura do Azure com acesso de Colaborador
 - Python 3.10 ou posterior
 - Azure CLI (`az`) instalada e autenticada (`az login`)
+- Azure Developer CLI (`azd`) instalada
 - Um terminal (bash, PowerShell ou WSL)
 
 ## Primeiros passos
 
-1. Clone este repositório e escolha uma pasta de cenário (`factory/`, `claims/` ou `callcenter/`)
-2. Comece pelo **Desafio 0** — ele provisiona tudo de que você precisa
-3. Percorra os desafios 1–4 na ordem; cada um se baseia no anterior
-4. Os scripts `agents.py` e `deploy.py` estão prontos para execução — leia o README em cada pasta de desafio para saber o que fazer
+1. Clone este repositório e autentique-se com `az login` e `azd auth login`
+2. Para provisionar o cenário padrão da central de atendimento, execute `azd up` na raiz do repositório
+3. Para um cenário específico, entre em `factory/`, `claims/` ou `callcenter/` e execute `azd up`
+4. Percorra os desafios 1–4 na ordem; cada um se baseia no anterior
+5. Os scripts `agents.py` e `deploy.py` estão prontos para execução — leia o README em cada pasta de desafio para saber o que fazer

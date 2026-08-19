@@ -8,7 +8,7 @@ Parabéns: você criou, instrumentou, avaliou e implantou do zero um sistema de 
 
 | # | Desafio | O que você criou |
 |---|-----------|----------------|
-| 0 | **Configuração** | Provisionou um recurso do Microsoft Foundry, um projeto, uma implantação de modelo GPT, um workspace do Log Analytics e uma instância do Application Insights por meio de um único script `deploy.sh` |
+| 0 | **Configuração** | Provisionou um recurso do Microsoft Foundry, um projeto, uma implantação de modelo GPT, um workspace do Log Analytics e uma instância do Application Insights usando `azd provision` |
 | 1 | **Criar agentes** | Criou um **Claims Triage Agent** (avalia completude documental, risco de fraude e cobertura da apólice) e um **Claims Decision Agent** (recomenda aprovar, acelerar, sinalizar para investigação ou negar, com justificativa) |
 | 2 | **Monitorar** | Habilitou o rastreamento GenAI do OpenTelemetry: cada chamada de modelo, invocação de ferramenta e contagem de tokens é capturada como um trace distribuído no Application Insights |
 | 3 | **Avaliar** | Executou avaliações sistemáticas com LLM como juiz em todo o conjunto de dados de sinistros, produzindo pontuações repetíveis de coerência e fluência que podem ser acompanhadas por versão entre alterações de prompt |
@@ -49,15 +49,16 @@ Quer levar o sistema ClaimSight mais longe? Veja algumas direções:
   - Log Analytics workspace
   - Application Insights instance
 
-### Opção 1 — Script
+### Opção 1 — azd down
 
-Execute o script de limpeza na raiz do repositório:
+Na pasta **claims** (onde o ambiente `azd` foi inicializado), execute:
 
 ```bash
-bash claims/cleanup.sh
+cd claims
+azd down --purge
 ```
 
-O script lê o arquivo `.env` criado por `deploy.sh` para saber exatamente qual grupo de recursos deve ser alvo. Ele pede confirmação antes de excluir.
+O comando usa o ambiente `azd` criado por `azd provision` para saber exatamente qual grupo de recursos deve ser alvo. Ele pede confirmação antes de excluir.
 
 ### Opção 2 — Portal do Azure
 
