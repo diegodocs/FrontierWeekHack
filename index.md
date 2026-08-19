@@ -1,5 +1,3 @@
-![Banner](./assets/images/banner.png)
-
 # Laboratório — Crie agentes de IA com o Microsoft Foundry
 Boas-vindas ao laboratório prático do **Hackathon Microsoft Cloud & AI Frontier Week** — onde ideias se transformam em soluções reais.
 
