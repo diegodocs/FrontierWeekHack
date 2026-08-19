@@ -24,13 +24,13 @@ Ao final deste desafio, você terá:
 
 Há duas formas de começar: escolha uma:
 
-> **Primeiro passo para as duas opções:** [crie um fork deste repositório](https://github.com/microsoft/FrontierWeekHack/fork) na sua conta do GitHub.
+> **Primeiro passo para as duas opções:** [crie um fork deste repositório](https://github.com/diegodocs/FrontierWeekHack/fork) na sua conta do GitHub.
 
 ### Opção A: GitHub Codespaces (recomendado)
 
 Não é necessário instalar nada localmente. Tudo é executado em um ambiente de desenvolvimento na nuvem.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/FrontierWeekHack)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/diegodocs/FrontierWeekHack)
 
 1. Clique no selo acima (se aplicável, selecione seu fork)
 2. Aguarde a criação do Codespace (~2 min)
@@ -50,7 +50,7 @@ Execute tudo na sua própria máquina. Requer Python 3.10+ e o Azure CLI.
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/microsoft/FrontierWeekHack.git
+git clone https://github.com/diegodocs/FrontierWeekHack.git
 cd FrontierWeekHack
 
 # 2. Create and activate a virtual environment
